@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome to relative page</h1>
+    
+{#    <a href="basic_app/other.html"></a>#}
+{#    这里template tagging 可以找到在名叫basic_app的app下的url中名叫other的url，这个basic_app的名字是在该app下的urls.py里面定义的#}
+{#    这么app 的名字的定义有一个专门的标签 app_name = ''#}
+    <a href="{% url 'basic_app:other' %}">The other page</a>
+    <a href="{% url 'admin:index' %}">Admin Index</a>
+    <a href="{% url 'index' %}">Index</a>
+</body>
+</html>
